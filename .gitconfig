@@ -1,0 +1,14 @@
+[user]
+  email = ant478@gmail.com
+  name = ant478
+[alias]
+  co = checkout
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  cp = cherry-pick
+  load = !git push origin HEAD
+  undo = !git reset --soft HEAD~1 && git reset && git st
+  fix = !git commit --all --amend --no-edit && git st
+  tmp = !git add . && git commit -m "tmp" && git st
+  drop = !git add . && git reset --hard
